@@ -1,6 +1,10 @@
 name: Actions WorkFlow
 
-on: [push]
+on:
+  push:
+  issues:
+    types:
+      - "opened"
 
 jobs:
   run-github-actions:
